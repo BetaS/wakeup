@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.realapps.wakeup"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+		<receiver android:name=".scene.main.alarm.activity.receiver.AlarmReceiver" android:process=":remote" />
+		<receiver android:name=".scene.main.alarm.activity.receiver.ResetAlarm">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		
+        <activity android:name=".scene.Splash" android:screenOrientation="portrait" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".scene.main.Main" android:screenOrientation="portrait" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+		
+		<activity android:name=".scene.main.alarm.AlarmList" android:screenOrientation="portrait" android:label="알람 목록" android:theme="@android:style/Theme.Light"/>
+		
+		<activity android:name=".scene.main.alarm.SetupAlarm" android:screenOrientation="portrait" android:label="알람 설정" android:theme="@android:style/Theme.Black"/>
+		<activity android:name=".scene.main.alarm.SelectAlarm" android:screenOrientation="portrait" android:label="알람 종류 선택" android:theme="@android:style/Theme.Black"/>
+		<activity android:name=".scene.main.alarm.SetAlarmDay" android:screenOrientation="portrait" android:label="알람 반복 설정" android:theme="@android:style/Theme.Black"/>
+		
+		<activity android:name=".scene.main.mail.Mail" android:screenOrientation="portrait" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+		<activity android:name=".scene.main.mail.SendMail" android:screenOrientation="portrait" android:label="오늘의 편지" android:theme="@android:style/Theme.Black"/>
+		<activity android:name=".scene.main.mail.ViewMail" android:screenOrientation="portrait" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+		
+		<activity android:name=".scene.main.calendar.CalendarView" android:screenOrientation="portrait" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+		
+		<activity android:name=".scene.main.alarm.activity.DefaultAlarm" android:screenOrientation="landscape" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+		<activity android:name=".scene.main.alarm.activity.DumbbellAlarm" android:screenOrientation="landscape" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+		<activity android:name=".scene.main.alarm.activity.KissAlarm" android:screenOrientation="landscape" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+		<activity android:name=".scene.main.alarm.activity.GogiAlarm" android:screenOrientation="landscape" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+		<activity android:name=".scene.main.alarm.activity.MathAlarm" android:screenOrientation="landscape" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+    </application>
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/mail_bg">
+	
+	<Button android:id="@+id/btn_view_mail" android:layout_width="200dip"
+		android:layout_height="wrap_content" android:text="오늘의 편지 읽기" android:textSize="20sp" 
+		android:layout_marginTop="150dip" android:layout_gravity="center_horizontal"
+		android:paddingTop="20dip" android:paddingBottom="20dip"/>
+	<Button android:id="@+id/btn_send_mail" android:layout_width="200dip"
+		android:layout_height="wrap_content" android:text="누군가에게 편지쓰기" android:textSize="18sp" 
+		android:layout_marginTop="5dip" android:layout_gravity="center_horizontal"
+		android:paddingTop="20dip" android:paddingBottom="20dip"/>
+</LinearLayout>

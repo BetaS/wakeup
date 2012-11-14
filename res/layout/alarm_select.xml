@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bg2">
+	<LinearLayout android:layout_marginTop="10dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal">
+		<ImageButton android:id="@+id/btn_default" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/default_icon_12" />
+		<ImageButton android:layout_marginLeft="30dip" android:id="@+id/btn_gogi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/gogi_icon_12" />
+	</LinearLayout>
+	<LinearLayout android:layout_marginTop="20dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal">
+		<ImageButton android:id="@+id/btn_math" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/math_icon_12" />
+		<ImageButton android:id="@+id/btn_kiss" android:layout_marginLeft="30dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/morning_kiss_icon_12" />
+	</LinearLayout>
+	<LinearLayout android:layout_marginTop="20dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal">
+		<ImageButton android:id="@+id/btn_dumbbell" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/dumbbell_icon_12" />
+		<ImageButton android:id="@+id/btn_lock" android:layout_marginLeft="30dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/rock_icon_12" />
+	</LinearLayout>
+</LinearLayout>

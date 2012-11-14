@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+   <com.realapps.wakeup.widget.ClearSwitch android:id="@+id/onoff_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+
+	<TextView android:id="@+id/txt_mission"
+    	android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/onoff_switch"
+    	android:text="지령지령지령" android:textSize="30sp" android:gravity="center" android:layout_marginTop="10dip"/>
+    
+    <RelativeLayout android:id="@+id/layout_alarm" android:layout_width="fill_parent" android:layout_height="fill_parent"
+     	android:layout_below="@id/txt_mission" android:layout_marginTop="20dip">
+     	<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/gogi_bg"
+     		android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

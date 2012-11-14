@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/title_bg">
+	
+	<Button android:id="@+id/btn_set_alarm" android:layout_width="180dip"
+		android:layout_height="wrap_content" android:text="알람맞추기" android:textSize="20sp" 
+		android:layout_marginTop="170dip" android:layout_gravity="center_horizontal"
+		android:paddingTop="20dip" android:paddingBottom="20dip"/>
+	<Button android:id="@+id/btn_view_alarm" android:layout_width="180dip"
+		android:layout_height="wrap_content" android:text="알람보기" android:textSize="20sp" 
+		android:layout_marginTop="5dip" android:layout_gravity="center_horizontal"
+		android:paddingTop="20dip" android:paddingBottom="20dip"/>
+</LinearLayout>
